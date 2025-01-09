@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "word": "apple",
+    "transcription": "/ˈæp.əl/",
+    "translation": "яблоко",
+    "topic": "food"
+  },
+  {
+    "id": 2,
+    "word": "computer",
+    "transcription": "/kəmˈpjuː.tər/",
+    "translation": "компьютер",
+    "topic": "technology"
+  },
+  {
+    "id": 3,
+    "word": "sun",
+    "transcription": "/sʌn/",
+    "translation": "солнце",
+    "topic": "nature"
+  },
+  {
+    "id": 4,
+    "word": "book",
+    "transcription": "/bʊk/",
+    "translation": "книга",
+    "topic": "education"
+  },
+  {
+    "id": 5,
+    "word": "dog",
+    "transcription": "/dɒɡ/",
+    "translation": "собака",
+    "topic": "animals"
+  },
+  {
+    "id": 6,
+    "word": "happiness",
+    "transcription": "/ˈhæp.i.nəs/",
+    "translation": "счастье",
+    "topic": "emotions"
+  },
+  {
+    "id": 7,
+    "word": "guitar",
+    "transcription": "/ɡɪˈtɑːr/",
+    "translation": "гитара",
+    "topic": "music"
+  },
+  {
+    "id": 8,
+    "word": "mountain",
+    "transcription": "/ˈmaʊn.tɪn/",
+    "translation": "гора",
+    "topic": "nature"
+  },
+  {
+    "id": 9,
+    "word": "coffee",
+    "transcription": "/ˈkɒf.i/",
+    "translation": "кофе",
+    "topic": "food"
+  },
+  {
+    "id": 10,
+    "word": "friend",
+    "transcription": "/frend/",
+    "translation": "друг",
+    "topic": "relationships"
+  },
+  {
+  "id": 11,
+  "word": "bicycle",
+  "transcription": "/ˈbaɪ.sɪ.kəl/",
+  "translation": "велосипед",
+  "topic": "transport"
+  },
+  {
+    "id": 12,
+    "word": "ocean",
+    "transcription": "/ˈəʊ.ʃən/",
+    "translation": "океан",
+    "topic": "nature"
+  },
+  {
+    "id": 13,
+    "word": "library",
+    "transcription": "/ˈlaɪ.brər.i/",
+    "translation": "библиотека",
+    "topic": "education"
+  },
+  {
+    "id": 14,
+    "word": "chocolate",
+    "transcription": "/ˈtʃɒk.lət/",
+    "translation": "шоколад",
+    "topic": "food"
+  },
+  {
+    "id": 15,
+    "word": "butterfly",
+    "transcription": "/ˈbʌt.ə.flaɪ/",
+    "translation": "бабочка",
+    "topic": "animals"
+  },
+  {
+    "id": 16,
+    "word": "garden",
+    "transcription": "/ˈɡɑː.dən/",
+    "translation": "сад",
+    "topic": "nature"
+  },
+  {
+    "id": 17,
+    "word": "piano",
+    "transcription": "/piˈæn.əʊ/",
+    "translation": "пианино",
+    "topic": "music"
+  },
+  {
+    "id": 18,
+    "word": "camera",
+    "transcription": "/ˈkæm.rə/",
+    "translation": "камера",
+    "topic": "technology"
+  },
+  {
+    "id": 19,
+    "word": "journey",
+    "transcription": "/ˈdʒɜː.ni/",
+    "translation": "путешествие",
+    "topic": "travel"
+  },
+  {
+    "id": 20,
+    "word": "rainbow",
+    "transcription": "/ˈreɪn.bəʊ/",
+    "translation": "радуга",
+    "topic": "nature"
+  }
+]

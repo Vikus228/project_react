@@ -1,0 +1,56 @@
+@use '../../styles/_variables' as *;
+
+.game-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid $secondary-color;
+  border-radius: 10px;
+  background-color: $background-color;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.game-item h1 {
+  font-size: 1.5em;
+  color: $secondary-color;
+  margin-bottom: 10px;
+}
+
+.game-item p {
+  font-size: 1em;
+  color: #333;
+  margin: 5px 0;
+}
+
+.game-item div:last-child {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-item button {
+  color: $background-color;
+  background-color: $secondary-color;
+  padding: 8px 16px;
+  border: 2px solid $secondary-color;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.game-item button:hover {
+  background-color: $background-color;
+  color: $secondary-color;
+}
+
+.game-item div {
+  margin-bottom: 10px;
+}

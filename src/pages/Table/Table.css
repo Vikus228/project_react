@@ -1,0 +1,84 @@
+.container {
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.container_row {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+.container_row:hover {
+  background-color: #f0e5f9;
+}
+.container_row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.container_row:nth-child(even):hover {
+  background-color: #f0e5f9;
+}
+
+.wrapper_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+.content div {
+  flex: 1;
+  text-align: center;
+  color: #333;
+  font-size: 1em;
+}
+
+.editer {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+.editer input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+.editer input:focus {
+  border-color: #7d2e5d;
+  outline: none;
+}
+
+.wapper_button {
+  display: flex;
+  gap: 30px;
+}
+.wapper_button button {
+  color: white;
+  background-color: #7d2e5d;
+  padding: 8px 20px;
+  border: 2px solid #7d2e5d;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.wapper_button button:hover {
+  background-color: white;
+  color: #7d2e5d;
+}
+
+/*# sourceMappingURL=Table.css.map */

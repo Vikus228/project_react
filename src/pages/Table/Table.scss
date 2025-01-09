@@ -1,0 +1,92 @@
+@use '../../styles/variables' as *;
+
+.container {
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: $background-color;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.container_row {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: $background-color;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #f0e5f9;
+  }
+
+  &:nth-child(even) {
+    background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #f0e5f9;
+    }
+  }
+}
+
+.wrapper_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+
+  div {
+    flex: 1;
+    text-align: center;
+    color: #333;
+    font-size: 1em;
+  }
+}
+
+.editer {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+
+  input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+
+    &:focus {
+      border-color: $secondary-color;
+      outline: none;
+    }
+  }
+}
+
+.wapper_button {
+  display: flex;
+  gap: 30px;
+
+  button {
+    color: $background-color;
+    background-color: $secondary-color;
+    padding: 8px 20px;
+    border: 2px solid $secondary-color;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: $background-color;
+      color: $secondary-color;
+    }
+  }
+}
