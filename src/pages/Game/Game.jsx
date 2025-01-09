@@ -37,4 +37,3 @@ export default function Game({upd}) {
         </div>
     )
 }
-//
