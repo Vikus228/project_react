@@ -18,10 +18,13 @@ export default function GameItem({
             setViewedWords([...viewedWords, id]);
             setShowCompanys(false);
         }
-        if (!showCompanys) {
+    }, [id]);
+
+    useEffect(() => {
+        if (!showCompanys && btnRef.current) {
             btnRef.current.focus();
         }
-    }, [id]);
+    }, [showCompanys]);
 
     function handleClick() {
         setShowCompanys(true);

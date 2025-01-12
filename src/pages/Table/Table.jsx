@@ -10,15 +10,15 @@ export default function Table({ upd }) {
     };
 
     const handleEdit = (id, word, transcription, translation) => {
-        setUsers(users.map(word => word.id === id ? { ...user, word, transcription, translation } : word));
+        setWords(words.map(item => item.id === id ? { ...item, word, transcription, translation } : item));
     };
 
     return (
         <div className="container">
-            {words.map((word) => (
+            {words.map((item) => (
                 <RowItem
-                    {...word}
-                    key={word.id}
+                    {...item}
+                    key={item.id}
                     handleDelete={handleDelete}
                     handleEdit={handleEdit}
                 />

@@ -6,6 +6,16 @@ export default function RowItem( {word, transcription, translation, id, handleDe
     const [valueWord, setValueWord] = useState(word);
     const [valueTranscription, setValueTranscription] = useState(transcription);
     const [valueTranslation, setValueTranslation] = useState(translation);
+    const [valid, setValid] = useState(false);
+
+    useEffect(() => {
+        if (valueTranslation !== '' && valueTranscription !== '' && valueWord !== '') {
+            setValid(true);
+        } else {
+            setValid(false);
+        }
+    }, [valueTranslation, valueTranscription, valueWord]);
+
     useEffect(() => {
         setValueWord(word);
         setValueTranscription(transcription);
@@ -21,15 +31,20 @@ export default function RowItem( {word, transcription, translation, id, handleDe
                             type="text"
                             value={valueWord}
                             onChange={(e) => setValueWord(e.target.value)}
+                            required
                         />
                         <input
                             type="text"
                             value={valueTranscription}
-                            onChange={(e) => setValueTranscription(e.target.value)}/>
+                            onChange={(e) => setValueTranscription(e.target.value)}
+                            required
+                        />
                         <input
                             type="text"
                             value={valueTranslation}
-                            onChange={(e) => setValueTranslation(e.target.value)}/>
+                            onChange={(e) => setValueTranslation(e.target.value)}
+                            required
+                        />
                     </div>
                 ) : (
                     <div className="content">
@@ -49,10 +64,11 @@ export default function RowItem( {word, transcription, translation, id, handleDe
                         </div>
                     ) : (
                         <div>
-                            <button onClick={() =>
+                            <button disabled={!valid} onClick={() =>
                                 {
-                                    handleEdit(id, valueWord, setValueTranscription, valueTranslation)
-                                    setEdit(false)
+                                    handleEdit(id, valueWord, valueTranscription, valueTranslation);
+                                    setEdit(false);
+                                    console.log(valueWord, valueTranscription, valueTranslation);
                                 }
                             }>
                                 save
